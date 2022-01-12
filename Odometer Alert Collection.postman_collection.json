@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "35165516-2cc9-488e-979d-632b54dca704",
+		"name": "Odometer Alert Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST valid vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE valid vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "POST invalid vehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://qa-api-challenge.herokuapp.com/api/v1/vehicles/-1/odometer-alerts/_enroll",
+					"protocol": "https",
+					"host": [
+						"qa-api-challenge",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"vehicles",
+						"-1",
+						"odometer-alerts",
+						"_enroll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE invalid vehicle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		},
+		{
+			"name": "GET ododmeter alerts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
